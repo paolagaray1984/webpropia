@@ -1,0 +1,224 @@
+/*body {
+    background: #000000;
+color:#fff
+*{
+    margin:0;
+    padding:0;
+    color: blue
+}
+}
+*/
+/*h2{
+   color: red; 
+}
+h1{
+    font-size:20px;
+}
+h2{
+   font-size: 10px; 
+}
+p{
+    color:green;
+}
+p a{
+    font-size: 1+/rem;
+    color: blueviolet;
+}
+.yellow{
+    color:yellow;
+}
+a[href="http://www.google.com"]{
+    color:green;
+    font-size: 25px;
+}
+*/
+
+body{
+    font-size: 16px;
+    margin:50px;
+    padding:50px;
+    background: url(../public/imagenes/fondopagina.jpg);
+    background-repeat: repeat-x;
+    background-position:0px 0px ;
+    background-attachment: scroll;
+    
+    
+}
+nav#main{
+    background-color: darkgreen;
+}
+ul{
+    margin:16px auto;
+    padding:0px;
+    overflow: hidden;
+    list-style: none;
+
+}
+
+input{
+    font-size:16px ;
+    color:rgb(46, 73, 224);
+
+}
+a:hover{
+    background: rgb(113, 171, 194);
+    color:rgb(11, 12, 12);
+}
+
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    
+    
+   
+}
+
+ol{
+    
+    margin:0;
+    padding: 12px;
+}
+a:visited{
+    color: rgb(12, 12, 12);
+}
+
+p{
+    font-size: 1em;
+}
+ /* estas son cajas*/
+h1 {
+    color:rgb(238, 234, 234);
+    background-color: rgb(10, 10, 10);
+    margin: 16px;
+    padding: 12px;
+    font-size: 40px;
+    border: 3px dotted rgb(7, 7, 7);
+}
+
+
+div{
+    height:100px;
+    width: 500px;
+    background-color: rgb(199, 221, 236);
+    margin: 0px;
+    padding: 10px;
+    border:3px solid #000;
+    display: inline-block; 
+}
+ /* tablas */
+tr{
+    width: 50px;
+    height: 50px;
+    background: #f4f7f6;
+    border-color: black;
+    color:rgb(10, 10, 10);
+    font-size: 20px;
+}
+ /*nos permite desplazar las cajas*/
+.caja{
+    position: absolute; /*absolute se corre la caja pero las demas se posicionan bien*/
+    top:0px;
+    bottom: 0px;
+    right:0px ;
+    left:0px ;
+}
+
+
+
+
+td{
+    width: 50px;
+    height: 50px;  
+}
+table td{
+    width: 10px;
+    height: 10px;
+}
+footer p{
+    color:rgb(238, 234, 234);
+    background-color: rgb(10, 10, 10);
+}
+/* si colocamos un elemento padre en html,creamos dos div uno dentro del otro, esto genera una caja que podemos poner dentro nuestro h2
+<div class=caja padre">
+<div class="caja">
+<h2>#2</h2>
+</div>
+</div>
+creamos en css
+.caja padre{ 
+    position:relative; padre es absolute, hijo relative
+    top:100px;
+    bottom:0px
+    right:0;
+    left:50px;
+
+    tambien estan las posiciones fijas
+
+    .caja{
+    position:fixed; es por coordenada los movimientos.
+    top:100px; hacia abajo
+    bottom:0px;
+    right:0;
+    left:50px; hacia la derecha
+    si hacemos un scrool la imagen queda quieta mientras la pagina se mueve
+    
+    .caja{
+    position:static; quedan invalidas las propiedades de abajo
+    top:100px; 
+    bottom:0px;
+    right:0;
+    left:50px
+
+    .div{
+    width: 100px;
+    height: 100px;
+    background: #337760;
+    color: black;
+    font-size: 30px;
+    float:left o right; todas se acomodan en forma lineal una al lado de la otra
+    diseño con columnas
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
