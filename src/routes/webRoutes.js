@@ -1,7 +1,8 @@
-const expres = require('express');
-const routes= express.Routes();
+const express = require('express');
+const router= express.Router();
 const path = require('path');
-const webController= require (path.resolve(__dirname, '../controllers/webControllers'));
+const webController= require('../controllers/webControllers');
+
 router.get('/',webController.index);
-router.get('nosotros',webController.nosotros);
-module.export=router;
+
+module.exports=router;

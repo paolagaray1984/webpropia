@@ -32,16 +32,38 @@ a[href="http://www.google.com"]{
     font-size: 25px;
 }
 */
+*{
+    box-sizing: border-box;
+}
 
 body{
     font-size: 16px;
-    margin:50px;
-    padding:50px;
-    background: url(../public/imagenes/fondopagina.jpg);
+    margin:0px;
+    padding:0px;
+    background: url("../imagenes/nubes.jpg");
     background-repeat: repeat-x;
     background-position:0px 0px ;
     background-attachment: scroll;
     
+  
+    
+
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+
+#contenedor {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+
+
+.wrapper{
+    margin: 50px;
+    padding: 50px;
     
 }
 nav#main{
@@ -140,6 +162,41 @@ footer p{
     color:rgb(238, 234, 234);
     background-color: rgb(10, 10, 10);
 }
+
+header{
+    position: relative;
+    height: 5vh;
+}
+header img.animacion{
+    width: 7em;
+    position: absolute;
+    right:-7em; top: 20px;
+}
+.animacion{
+animation: moving 3s ease-in-out infinite;
+}
+@keyframes moving{
+to{
+    right: -7em;
+}
+
+from {
+    right: 100%;
+}
+
+}
+
+@import "./mobile.css" screen and (max-width: 575.98px);
+@import "./tablet.css" screen and (min-width: 576px) and (max-width: 767.98px);
+@import "./tablet.css" screen and (min-width: 768px) and (max-width: 991.98px);
+@import "./laptop.css" screen and (min-width: 992px) and (max-width: 1199.98px);
+@import "./desktop.css" screen and (min-width: 1200px);
+
+
+
+
+
+
 /* si colocamos un elemento padre en html,creamos dos div uno dentro del otro, esto genera una caja que podemos poner dentro nuestro h2
 <div class=caja padre">
 <div class="caja">
